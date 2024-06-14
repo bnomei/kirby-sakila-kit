@@ -1,13 +1,15 @@
 <?php
 
 return [
-    'debug' => false,
-    'stopwatch' => true,
-
+    'debug' => true,
+    'editor' => 'phpstorm',
     'db' => [
         'host' => '127.0.0.1',
-        'database' => 'kirby',
+        'database' => 'sakila',
         'user' => 'root',
-        'password' => 'root',
+        'password' => '',
+    ],
+    'content' => [
+        'locking' => false,
     ],
 ];

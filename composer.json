@@ -42,5 +42,10 @@
     "pestphp/pest": "^2.34",
     "pestphp/pest-plugin-stressless": "^2.2",
     "spatie/ray": "^1.41"
+  },
+  "scripts": {
+    "fix": "vendor/bin/pint",
+    "test": "vendor/bin/pest",
+    "sakila": "env KIRBY_HOST=sakila.test kirby sakila"
   }
 }

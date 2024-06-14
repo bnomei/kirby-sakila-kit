@@ -6,9 +6,20 @@ test('example', function () {
 
 use function Pest\Stressless\stress;
 
-it('has a fast response time', function () {
+it('has a fast response time on the homepage', function () {
     $result = stress('http://sakila.test');
-    $result->dd();
+    $result->dump();
+    expect($result->requests()->duration()->med())->toBeLessThan(50);
+});
 
-    // expect($result->requests()->duration()->med())->toBeLessThan(100); // < 100.00ms
+it('has 1000 films', function () {
+    $result = stress('http://sakila.test/film');
+    $result->dump();
+    expect($result->requests()->duration()->med())->toBeLessThan(100);
+});
+
+it('has 1000 films with actors each', function () {
+    $result = stress('http://sakila.test/film?actors=1');
+    $result->dump();
+    expect($result->requests()->duration()->med())->toBeLessThan(100);
 });
