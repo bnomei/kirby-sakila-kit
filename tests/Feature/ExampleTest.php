@@ -23,3 +23,9 @@ it('has 1000 films with actors each', function () {
     $result->dump();
     expect($result->requests()->duration()->med())->toBeLessThan(100);
 });
+
+it('has 1000 films filterable by feature', function () {
+    $result = stress('http://sakila.test/film?feature=Trailers');
+    $result->dump();
+    expect($result->requests()->duration()->med())->toBeLessThan(100);
+});
