@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'debug' => true,
+    'debug' => false,
     'editor' => 'phpstorm',
     'db' => [
         'host' => '127.0.0.1',
