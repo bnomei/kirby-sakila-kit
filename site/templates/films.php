@@ -12,7 +12,7 @@ if ($feature = get('feature')) {
     sort($features);
     ?>
     <ul>
-      <?php foreach (array_unique($features) as $feature) {
+      <?php foreach ($features as $feature) {
         $objectsCount++;
         ?>
         <li><a href="<?= $page->url() . '?feature=' . $feature ?>"><?= $feature ?></a></li>
