@@ -12,12 +12,13 @@ return [
     'content' => [
         'locking' => false,
     ],
+    'bnomei.php-cachedriver.check_opcache' => false,
     'bnomei.boost.cache' => [
-        'type' => 'file',
+        'type' => 'php',
     ],
     'cache' => [
         'uuid' => [
-            'type' => 'file',
+            'type' => 'php',
         ],
     ],
 ];

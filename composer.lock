@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "70b624087005838e19873704451011fc",
+  "content-hash": "216c23022905d4b1ecae6dc05d453d50",
   "packages": [
     {
       "name": "bnomei/kirby3-boost",
@@ -105,6 +105,91 @@
         }
       ],
       "time": "2024-02-03T11:33:29+00:00"
+    },
+    {
+      "name": "bnomei/kirby3-php-cachedriver",
+      "version": "2.0.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/bnomei/kirby3-php-cachedriver.git",
+        "reference": "4c31f1fd3e6d3a9b8930772391f9b203e62faec7"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/bnomei/kirby3-php-cachedriver/zipball/4c31f1fd3e6d3a9b8930772391f9b203e62faec7",
+        "reference": "4c31f1fd3e6d3a9b8930772391f9b203e62faec7",
+        "shasum": ""
+      },
+      "require": {
+        "getkirby/composer-installer": "^1.1",
+        "php": ">=8.0"
+      },
+      "require-dev": {
+        "getkirby/cms": "^3.5",
+        "php-coveralls/php-coveralls": "^2.1",
+        "phpunit/phpunit": "^9.5"
+      },
+      "suggest": {
+        "bnomei/kirby3-boost": "Boost the speed of Kirby by having content files of pages cached, with automatic unique ID, fast lookup and Tiny-URL.",
+        "bnomei/kirby3-lapse": "Cache any data until set expiration time"
+      },
+      "type": "kirby-plugin",
+      "extra": {
+        "kirby-cms-path": "tests/kirby"
+      },
+      "autoload": {
+        "psr-4": {
+          "Bnomei\\": "classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Bruno Meilick",
+          "email": "b@bnomei.com"
+        }
+      ],
+      "description": "PHP based Cache-Driver",
+      "keywords": [
+        "Opcache",
+        "cache",
+        "include",
+        "key",
+        "key-value",
+        "kirby3",
+        "kirby3-cms",
+        "kirby3-plugin",
+        "performance",
+        "php",
+        "value",
+        "var_export"
+      ],
+      "support": {
+        "issues": "https://github.com/bnomei/kirby3-php-cachedriver/issues",
+        "source": "https://github.com/bnomei/kirby3-php-cachedriver/tree/v2.0.0"
+      },
+      "funding": [
+        {
+          "url": "https://buymeacoff.ee/bnomei",
+          "type": "custom"
+        },
+        {
+          "url": "https://paypal.me/bnomei",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/bnomei",
+          "type": "github"
+        },
+        {
+          "url": "https://www.patreon.com/bnomei",
+          "type": "patreon"
+        }
+      ],
+      "time": "2022-12-09T18:38:31+00:00"
     },
     {
       "name": "christian-riesen/base32",
