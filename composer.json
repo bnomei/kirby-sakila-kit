@@ -1,0 +1,46 @@
+{
+  "name": "bnomei/kirby-sakila-kit",
+  "description": "Kirby CMS setup based on the Sakila SQL demo DB but optimized for performance",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "type": "project",
+  "homepage": "https://sakila.bnomei.com",
+  "keywords": [
+    "kirby",
+    "cms",
+    "demo",
+    "sakila",
+    "sql",
+    "performance",
+    "stresstest",
+    "flat-file",
+    "optimized"
+  ],
+  "authors": [
+    {
+      "name": "Bruno Meilick",
+      "email": "b@bnomei.com"
+    }
+  ],
+  "require": {
+    "getkirby/cli": "^1.5",
+    "getkirby/cms": "^4.3"
+  },
+  "extra": {
+    "kirby-cms-path": false
+  },
+  "config": {
+    "allow-plugins": {
+      "getkirby/composer-installer": true,
+      "pestphp/pest-plugin": true
+    },
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "require-dev": {
+    "laravel/pint": "^1.16",
+    "pestphp/pest": "^2.34",
+    "pestphp/pest-plugin-stressless": "^2.2",
+    "spatie/ray": "^1.41"
+  }
+}
