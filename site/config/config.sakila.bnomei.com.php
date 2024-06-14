@@ -5,6 +5,9 @@ return [
     'updates' => [
         'kirby' => false,
     ],
+    'bnomei.lapse.cache' => [
+        'type' => 'file',
+    ],
     'bnomei.boost.cache' => [
         'type' => 'memcached',
     ],

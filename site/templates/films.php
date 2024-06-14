@@ -2,7 +2,6 @@
 
 $films = $page->children();
 if ($feature = get('feature')) {
-  $films = $films->filterBy('special_features', $feature, ',');
   ?>
   <nav>
     <?php $features = [];
@@ -18,7 +17,9 @@ if ($feature = get('feature')) {
       <?php } ?>
     </ul>
   </nav>
-<?php } ?>
+  <?php
+  $films = $films->filterBy('special_features', $feature, ',');
+} ?>
 
 <ol>
   <?php
