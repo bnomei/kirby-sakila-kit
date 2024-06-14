@@ -1,11 +1,12 @@
-<?php $objectsCount = 0;
-
+<?php
+$objectsCount = 0;
 $films = $page->children();
-if ($feature = get('feature')) {
-  $films = $films->filterBy('special_features', $feature, ',');
-  ?>
+
+if ($feature = get('feature')) { ?>
   <nav>
-    <?php $features = lapse('features', function () use ($films) {
+    <?php
+    // get all filterable features
+    $features = lapse([/*$films,*/ 'features'], function () use ($films) {
       $features = [];
       foreach ($films as $film) {
         $features = array_values(array_merge($features, explode(',', $film->special_features()->value())));
@@ -24,7 +25,14 @@ if ($feature = get('feature')) {
       <?php } ?>
     </ul>
   </nav>
-<?php } ?>
+  <?php
+  // then filter by feature
+  $filmIds = lapse([/*$films,*/ $feature], function () use ($films, $feature) {
+    return $films->filterBy('special_features', $feature, ',')->map(fn($page) => $page->uuid()->toString())->values();
+  }, 15);
+
+  $films = new \Kirby\Cms\Pages($filmIds);
+} ?>
 
 <ol>
   <?php
