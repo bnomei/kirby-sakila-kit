@@ -48,3 +48,8 @@ Icon
 # ---------------
 
 /storage/.license
+
+# Composer
+# ---------------
+
+/vendor/*
