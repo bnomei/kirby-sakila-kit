@@ -16,6 +16,9 @@ return [
     'bnomei.boost.cache' => [
         'type' => 'php',
     ],
+    'bnomei.lapse.cache' => [
+        'type' => 'php',
+    ],
     'cache' => [
         'uuid' => [
             'type' => 'php',

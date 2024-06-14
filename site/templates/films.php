@@ -5,13 +5,19 @@ if ($feature = get('feature')) {
   $films = $films->filterBy('special_features', $feature, ',');
   ?>
   <nav>
-    <?php $features = [];
-    foreach ($films as $film) {
-      $features = array_merge($features, explode(',', $film->special_features()->value()));
+    <?php $features = lapse('features', function () use ($films) {
+      $features = [];
+      foreach ($films as $film) {
+        $features = array_values(array_merge($features, explode(',', $film->special_features()->value())));
+
+      }
+      $features = array_unique($features);
       sort($features);
-    } ?>
+
+      return $features;
+    }, 15); ?>
     <ul>
-      <?php foreach (array_unique($features) as $feature) {
+      <?php foreach ($features as $feature) {
         $objectsCount++;
         ?>
         <li><a href="<?= $page->url() . '?feature=' . $feature ?>"><?= $feature ?></a></li>

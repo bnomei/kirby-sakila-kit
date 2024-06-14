@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "216c23022905d4b1ecae6dc05d453d50",
+  "content-hash": "f1e0f44fc55c3d4b343d67518d5df540",
   "packages": [
     {
       "name": "bnomei/kirby3-boost",
@@ -105,6 +105,89 @@
         }
       ],
       "time": "2024-02-03T11:33:29+00:00"
+    },
+    {
+      "name": "bnomei/kirby3-lapse",
+      "version": "4.0.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/bnomei/kirby3-lapse.git",
+        "reference": "aad8bf992af1350ece28983a4af6e83ac958cf01"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/bnomei/kirby3-lapse/zipball/aad8bf992af1350ece28983a4af6e83ac958cf01",
+        "reference": "aad8bf992af1350ece28983a4af6e83ac958cf01",
+        "shasum": ""
+      },
+      "require": {
+        "getkirby/composer-installer": "^1.2",
+        "php": ">=8.1.0"
+      },
+      "require-dev": {
+        "getkirby/cms": "^4.0.1",
+        "php-coveralls/php-coveralls": "^2.4",
+        "phpunit/phpunit": "^9.5"
+      },
+      "suggest": {
+        "bnomei/kirby3-janitor": "Use a Panel Button or PHP code to clear the cache"
+      },
+      "type": "kirby-plugin",
+      "extra": {
+        "kirby-cms-path": "tests/kirby"
+      },
+      "autoload": {
+        "psr-4": {
+          "Bnomei\\": "classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Bruno Meilick",
+          "email": "b@bnomei.com"
+        }
+      ],
+      "description": "Cache any data until set expiration time",
+      "keywords": [
+        "automatic",
+        "cache",
+        "expire",
+        "key-value",
+        "kirby3",
+        "kirby3-cms",
+        "kirby3-plugin",
+        "memcache",
+        "modified",
+        "multi-language-support",
+        "performance"
+      ],
+      "support": {
+        "issues": "https://github.com/bnomei/kirby3-lapse/issues",
+        "source": "https://github.com/bnomei/kirby3-lapse/tree/v4.0.1"
+      },
+      "funding": [
+        {
+          "url": "https://buymeacoff.ee/bnomei",
+          "type": "custom"
+        },
+        {
+          "url": "https://paypal.me/bnomei",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/bnomei",
+          "type": "github"
+        },
+        {
+          "url": "https://www.patreon.com/bnomei",
+          "type": "patreon"
+        }
+      ],
+      "time": "2024-02-21T21:09:14+00:00"
     },
     {
       "name": "bnomei/kirby3-php-cachedriver",
