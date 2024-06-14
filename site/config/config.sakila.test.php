@@ -12,4 +12,12 @@ return [
     'content' => [
         'locking' => false,
     ],
+    'bnomei.boost.cache' => [
+        'type' => 'file',
+    ],
+    'cache' => [
+        'uuid' => [
+            'type' => 'file',
+        ],
+    ],
 ];
