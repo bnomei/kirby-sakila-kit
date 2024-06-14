@@ -7,8 +7,10 @@ if ($feature = get('feature')) {
     <?php $features = [];
     foreach ($films as $film) {
       $features = array_merge($features, explode(',', $film->special_features()->value()));
-      sort($features);
-    } ?>
+    }
+    $features = array_unique($features);
+    sort($features);
+    ?>
     <ul>
       <?php foreach ($features as $feature) {
         $objectsCount++;
