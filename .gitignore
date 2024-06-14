@@ -53,3 +53,5 @@ Icon
 # ---------------
 
 /vendor/*
+/site/plugins/kirby-*
+/site/plugins/kirby3-*
