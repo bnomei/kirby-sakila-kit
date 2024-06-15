@@ -6,11 +6,11 @@ return [
         'kirby' => false,
     ],
     'bnomei.boost.cache' => [
-        'type' => 'memcached',
+        'type' => 'apcu',
     ],
     'cache' => [
         'uuid' => [
-            'type' => 'memcached',
+            'type' => 'apcu',
         ],
     ],
 ];
