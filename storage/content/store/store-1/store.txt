@@ -1,0 +1,13 @@
+Title: Store 1
+
+----
+
+Store-id: 1
+
+----
+
+Address: page://QXfNniA66zakdNBv
+
+----
+
+Uuid: 84ohRKd6kBoYuc0q
