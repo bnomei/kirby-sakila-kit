@@ -35,3 +35,9 @@ it('can query films by actor', function () {
     $result->dump();
     expect($result->requests()->duration()->med())->toBeLessThan(100);
 });
+
+it('has rentals', function () {
+    $result = stress('http://sakila.test/rental');
+    $result->dump();
+    expect($result->requests()->duration()->med())->toBeLessThan(100);
+});
