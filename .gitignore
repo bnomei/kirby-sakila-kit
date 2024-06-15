@@ -55,3 +55,7 @@ Icon
 /vendor/*
 /site/plugins/kirby-*
 /site/plugins/kirby3-*
+
+# Environment
+# ---------------
+.env
