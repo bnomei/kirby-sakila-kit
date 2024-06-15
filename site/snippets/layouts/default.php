@@ -43,6 +43,11 @@
     padding: 1rem;
   }
 
+  header {
+    display: flex;
+    gap: 1rem
+  }
+
   blockquote {
     background: #f9f9f9;
     border-left: 0.25rem solid #ccc;
@@ -90,7 +95,10 @@
   }
 </style>
 <body>
-<a href="/"><?= site()->title() ?></a>
+<header>
+  <a href="https://sakila.bnomei.com">Sakila (unoptimzed)</a>
+  <a href="https://sakila-with-boost.bnomei.com">Sakila (with Boost plugin)</a>
+</header>
 <h1><?= $page->title() ?> <small>[<?= A::get($_ENV, 'BRANCH') ?>]</small></h1>
 <?= $slots->default() ?>
 
