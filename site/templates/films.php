@@ -1,4 +1,14 @@
-<?php $objectsCount = 0;
+<?php snippet('layouts/default', slots: true); ?>
+
+<blockquote>
+  <ul>
+    <li><a href="/film">Load all films</a></li>
+    <li><a href="/film?actors=1">Load all films and resolve actors for each film</a></li>
+    <li><a href="/film?feature=Trailers">Load all films, extract all features as filter and apply one</a></li>
+  </ul>
+</blockquote>
+
+<?php $modelCount = 0;
 
 $films = $page->children();
 if ($feature = get('feature')) {
@@ -11,9 +21,9 @@ if ($feature = get('feature')) {
     $features = array_unique($features);
     sort($features);
     ?>
-    <ul>
+    <ul class="filter">
       <?php foreach ($features as $feature) {
-        $objectsCount++;
+        $modelCount++;
         ?>
         <li><a href="<?= $page->url() . '?feature=' . $feature ?>"><?= $feature ?></a></li>
       <?php } ?>
@@ -27,7 +37,7 @@ if ($feature = get('feature')) {
   <?php
   /** @var \Kirby\Cms\Page $page * */
   foreach ($films as $film) {
-      $objectsCount++;
+    $modelCount++;
       ?>
     <li>
     <a href="<?= $film->url() ?>"><?= $film->title() ?></a><br>
@@ -36,7 +46,7 @@ if ($feature = get('feature')) {
         <summary>Actors</summary>
         <ul>
           <?php foreach ($film->actors()->toPages() as $actor) {
-              $objectsCount++;
+            $modelCount++;
               ?>
             <li><?= $actor->title() ?></li><?php
           } ?>
@@ -46,4 +56,4 @@ if ($feature = get('feature')) {
   <?php } ?>
 </ol>
 
-<h2><?= $objectsCount ?> objects</h2>
+<div id="modelCount"><?= $modelCount ?></div>

@@ -7,7 +7,7 @@ function cspHeaders()
     header('X-XSS-Protection: 1; mode=block');
     header('X-Content-Type-Options: nosniff');
     // strict
-    header('Content-Security-Policy: default-src data:; script-src \'self\'; connect-src \'self\'; style-src \'self\' \'unsafe-inline\'; img-src data: \'self\';');
+    header('Content-Security-Policy: default-src data:; script-src \'self\' \'unsafe-inline\' \'unsafe-eval\'; connect-src \'self\'; style-src \'self\' \'unsafe-inline\'; img-src data: \'self\';');
     // loose for jquery/alpinejs/etc...
     // header('Content-Security-Policy: default-src https: data: \'unsafe-inline\' \'unsafe-eval\'; script-src \'self\' \'unsafe-inline\' \'unsafe-eval\'; style-src \'self\' \'unsafe-inline\' \'unsafe-eval\'; img-src data: \'self\';');
     header('strict-transport-security: max-age=31536000; includeSubdomains');
