@@ -91,7 +91,7 @@
 </style>
 <body>
 <a href="/"><?= site()->title() ?></a>
-<h1><?= $page->title() ?> <small>[<?= getenv('BRANCH') ?>]</small></h1>
+<h1><?= $page->title() ?> <small>[<?= A::get($_ENV, 'BRANCH') ?>]</small></h1>
 <?= $slots->default() ?>
 
 <div id="info">...</div>
