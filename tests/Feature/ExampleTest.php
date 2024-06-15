@@ -29,3 +29,9 @@ it('has 1000 films filterable by feature', function () {
     $result->dump();
     expect($result->requests()->duration()->med())->toBeLessThan(100);
 });
+
+it('can query films by actor', function () {
+    $result = stress('http://sakila.test/actor/adam-grant/films');
+    $result->dump();
+    expect($result->requests()->duration()->med())->toBeLessThan(100);
+});
