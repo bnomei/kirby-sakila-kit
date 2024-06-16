@@ -8,16 +8,16 @@
   "packages": [
     {
       "name": "bnomei/kirby3-boost",
-      "version": "5.0.0",
+      "version": "5.0.1",
       "source": {
         "type": "git",
         "url": "https://github.com/bnomei/kirby3-boost.git",
-        "reference": "eed42591eff26c2d5264c89757e749f99953c8ea"
+        "reference": "895942dee227b61424e2f4509179cb5c86e9f023"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/bnomei/kirby3-boost/zipball/eed42591eff26c2d5264c89757e749f99953c8ea",
-        "reference": "eed42591eff26c2d5264c89757e749f99953c8ea",
+        "url": "https://api.github.com/repos/bnomei/kirby3-boost/zipball/895942dee227b61424e2f4509179cb5c86e9f023",
+        "reference": "895942dee227b61424e2f4509179cb5c86e9f023",
         "shasum": ""
       },
       "require": {
@@ -84,7 +84,7 @@
       ],
       "support": {
         "issues": "https://github.com/bnomei/kirby3-boost/issues",
-        "source": "https://github.com/bnomei/kirby3-boost/tree/v5.0.0"
+        "source": "https://github.com/bnomei/kirby3-boost/tree/v5.0.1"
       },
       "funding": [
         {
@@ -104,7 +104,7 @@
           "type": "patreon"
         }
       ],
-      "time": "2024-06-16T15:00:09+00:00"
+      "time": "2024-06-16T15:46:37+00:00"
     },
     {
       "name": "bnomei/kirby3-lapse",
