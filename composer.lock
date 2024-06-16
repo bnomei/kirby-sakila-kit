@@ -4,20 +4,20 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "f1e0f44fc55c3d4b343d67518d5df540",
+  "content-hash": "0b59d152e4cced8a74f2c8b4e9bfe218",
   "packages": [
     {
       "name": "bnomei/kirby3-boost",
-      "version": "4.0.4",
+      "version": "5.0.0",
       "source": {
         "type": "git",
         "url": "https://github.com/bnomei/kirby3-boost.git",
-        "reference": "7e567f484d5336f0eb79e4c64e71d9e211be5dcd"
+        "reference": "eed42591eff26c2d5264c89757e749f99953c8ea"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/bnomei/kirby3-boost/zipball/7e567f484d5336f0eb79e4c64e71d9e211be5dcd",
-        "reference": "7e567f484d5336f0eb79e4c64e71d9e211be5dcd",
+        "url": "https://api.github.com/repos/bnomei/kirby3-boost/zipball/eed42591eff26c2d5264c89757e749f99953c8ea",
+        "reference": "eed42591eff26c2d5264c89757e749f99953c8ea",
         "shasum": ""
       },
       "require": {
@@ -26,8 +26,8 @@
       },
       "require-dev": {
         "getkirby/cms": "^4.0.0-beta.2",
+        "larastan/larastan": "^2.9",
         "laravel/pint": "^1.13",
-        "nunomaduro/larastan": "^2.6",
         "pestphp/pest": "^2.24",
         "pestphp/pest-plugin-type-coverage": "^2.4"
       },
@@ -84,7 +84,7 @@
       ],
       "support": {
         "issues": "https://github.com/bnomei/kirby3-boost/issues",
-        "source": "https://github.com/bnomei/kirby3-boost/tree/v4.0.4"
+        "source": "https://github.com/bnomei/kirby3-boost/tree/v5.0.0"
       },
       "funding": [
         {
@@ -104,7 +104,7 @@
           "type": "patreon"
         }
       ],
-      "time": "2024-02-03T11:33:29+00:00"
+      "time": "2024-06-16T15:00:09+00:00"
     },
     {
       "name": "bnomei/kirby3-lapse",
