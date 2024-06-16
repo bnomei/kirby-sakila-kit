@@ -19,6 +19,11 @@ cspHeaders();
 
 $time = microtime(true);
 
+// disable on [main] branch
+\Bnomei\BoostDirInventory::singleton([
+    'enabled' => false,
+]);
+
 require_once __DIR__.'/../vendor/autoload.php';
 
 // using a public/storage folder setup to protect
