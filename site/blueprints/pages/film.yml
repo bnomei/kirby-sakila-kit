@@ -4,3 +4,8 @@ fields:
   actors:
     type: pages
     query: site.find('actor').children
+  categories:
+    type: pages
+    query: site.find('categories').children
+  special_features:
+    type: tags
