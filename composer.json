@@ -49,6 +49,7 @@
   "scripts": {
     "fix": "vendor/bin/pint",
     "test": "vendor/bin/pest",
-    "sakila": "env KIRBY_HOST=sakila.test kirby sakila"
+    "sakila": "env KIRBY_HOST=sakila.test kirby sakila",
+    "khulan": "env KIRBY_HOST=sakila.test kirby khulan:index"
   }
 }

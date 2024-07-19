@@ -5,12 +5,16 @@ return [
     'updates' => [
         'kirby' => false,
     ],
+    'bnomei.php-cachedriver.check_opcache' => false,
     'bnomei.boost.cache' => [
-        'type' => 'apcu',
+        'type' => 'php',
+    ],
+    'bnomei.lapse.cache' => [
+        'type' => 'php',
     ],
     'cache' => [
         'uuid' => [
-            'type' => 'apcu',
+            'type' => 'php',
         ],
     ],
 ];
