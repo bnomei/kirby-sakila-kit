@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'debug' => false,
+    'debug' => true,
     'editor' => 'phpstorm',
     'db' => [
         'host' => '127.0.0.1',
@@ -11,17 +11,5 @@ return [
     ],
     'content' => [
         'locking' => false,
-    ],
-    'bnomei.php-cachedriver.check_opcache' => false,
-    'bnomei.boost.cache' => [
-        'type' => 'php',
-    ],
-    'bnomei.lapse.cache' => [
-        'type' => 'php',
-    ],
-    'cache' => [
-        'uuid' => [
-            'type' => 'php',
-        ],
     ],
 ];

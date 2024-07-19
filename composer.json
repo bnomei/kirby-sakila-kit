@@ -23,9 +23,6 @@
     }
   ],
   "require": {
-    "bnomei/kirby3-boost": "^5.0",
-    "bnomei/kirby3-lapse": "^4.0",
-    "bnomei/kirby3-php-cachedriver": "^2.0",
     "getkirby/cli": "^1.5",
     "getkirby/cms": "^4.3"
   },

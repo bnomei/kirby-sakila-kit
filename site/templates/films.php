@@ -12,20 +12,20 @@
 
 $films = $page->children();
 if ($feature = get('feature')) {
-  ?>
+    ?>
   <nav>
     <?php $features = [];
     foreach ($films as $film) {
-      $features = array_merge($features, explode(',', $film->special_features()->value()));
+        $features = array_merge($features, explode(',', $film->special_features()->value()));
     }
     $features = array_unique($features);
     sort($features);
     ?>
     <ul class="filter">
       <?php foreach ($features as $feature) {
-        $modelCount++;
-        ?>
-        <li><a href="<?= $page->url() . '?feature=' . $feature ?>"><?= $feature ?></a></li>
+          $modelCount++;
+          ?>
+        <li><a href="<?= $page->url().'?feature='.$feature ?>"><?= $feature ?></a></li>
       <?php } ?>
     </ul>
   </nav>
@@ -37,7 +37,7 @@ if ($feature = get('feature')) {
   <?php
   /** @var \Kirby\Cms\Page $page * */
   foreach ($films as $film) {
-    $modelCount++;
+      $modelCount++;
       ?>
     <li>
     <a href="<?= $film->url() ?>"><?= $film->title() ?></a><br>
@@ -46,7 +46,7 @@ if ($feature = get('feature')) {
         <summary>Actors</summary>
         <ul>
           <?php foreach ($film->actors()->toPages() as $actor) {
-            $modelCount++;
+              $modelCount++;
               ?>
             <li><?= $actor->title() ?></li><?php
           } ?>
