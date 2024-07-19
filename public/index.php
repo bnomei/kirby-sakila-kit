@@ -21,11 +21,6 @@ $time = microtime(true);
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-// disable on [main] branch
-\Bnomei\BoostDirInventory::singleton([
-    'enabled' => false,
-]);
-
 // using a public/storage folder setup to protect
 // some files (like .env) from being accessed directly
 // in moving the web root folder to the public folder

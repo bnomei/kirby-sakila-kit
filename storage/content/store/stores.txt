@@ -1,1 +1,5 @@
 Title: Stores
+
+----
+
+Uuid: 6bUPdsGvpqreaxK3

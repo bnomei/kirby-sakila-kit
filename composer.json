@@ -23,9 +23,8 @@
     }
   ],
   "require": {
-    "bnomei/kirby3-boost": "^5.0",
+    "bnomei/kirby-nitro": "^1.0",
     "bnomei/kirby3-lapse": "^4.0",
-    "bnomei/kirby3-php-cachedriver": "^2.0",
     "getkirby/cli": "^1.5",
     "getkirby/cms": "^4.3"
   },
@@ -49,6 +48,7 @@
   "scripts": {
     "fix": "vendor/bin/pint",
     "test": "vendor/bin/pest",
-    "sakila": "env KIRBY_HOST=sakila.test kirby sakila"
+    "sakila": "env KIRBY_HOST=sakila.test kirby sakila",
+    "nitro": "env KIRBY_HOST=sakila.test kirby nitro:index"
   }
 }

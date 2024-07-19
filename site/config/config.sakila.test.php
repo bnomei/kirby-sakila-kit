@@ -12,16 +12,14 @@ return [
     'content' => [
         'locking' => false,
     ],
-    'bnomei.php-cachedriver.check_opcache' => false,
-    'bnomei.boost.cache' => [
-        'type' => 'php',
-    ],
+    'bnomei.nitro.json-encode-flags' => JSON_INVALID_UTF8_SUBSTITUTE | JSON_THROW_ON_ERROR,
+    'bnomei.nitro.max-dirty-cache' => 99999999,
     'bnomei.lapse.cache' => [
-        'type' => 'php',
+        'type' => 'nitro',
     ],
     'cache' => [
         'uuid' => [
-            'type' => 'php',
+            'type' => 'nitro',
         ],
     ],
 ];
