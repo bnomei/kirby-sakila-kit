@@ -99,7 +99,7 @@
   <a href="https://sakila.bnomei.com">Sakila (unoptimzed)</a>
   <a href="https://sakila-with-boost.bnomei.com">Sakila (with Boost plugin)</a>
   <a href="https://sakila-with-nitro.bnomei.com">Sakila (with Nitro plugin)</a>
-  <a href="https://sakila-with-khulan.bnomei.com">Sakila (with Khulan plugin)</a>
+<!--  <a href="https://sakila-with-khulan.bnomei.com">Sakila (with Khulan plugin)</a>-->
 </header>
 <h1><?= $page->title() ?> <small>[<?= A::get($_ENV, 'BRANCH') ?>]</small></h1>
 <?= $slots->default() ?>
